@@ -42,10 +42,10 @@ $base-font-color: $dark-gray;
 $action-color: $primary;
 
 // Border
-$base-border-color: $light-gray;
-$dark-border-color: $medium-gray;
-$base-border: 1px solid $base-border-color;
-$dark-border: 1px solid $dark-border-color;
+$base-border-color: #000;
+$dark-border-color: #fff;
+$base-border: 2px solid $base-border-color;
+$dark-border: 2px solid $dark-border-color;
 
 // Background Colors
 $base-background-color: $primary;

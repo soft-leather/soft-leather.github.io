@@ -25,13 +25,16 @@
 			margin: 0;
 		}
 	}
+	hr {
+		border-color: #fff;
+		margin-bottom: $small-spacing*1.5;
+	}
 }
 .hero__header {
 	display: block;
 	max-width: 24em;
 	margin: 0 auto;
-	padding-bottom: $smaller-spacing;
-	margin-bottom: $small-spacing*1.5;
+	// margin-bottom: $small-spacing*1.5;
 	text-align: center;
 	h1 {
 		font-weight: bold;
