@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<div class="hero">
+	<div class="hero__inner">
+		<div class="hero__img">
+			<img src="https://pbs.twimg.com/profile_images/751892820378591232/R5wW4y6t.jpg" alt="" >
+		</div>
+		<form action="">
+			<div class="form-group">
+				<input type="text" placeholder="Name">
+			</div>
+			<div class="form-group">
+				<input type="email" placeholder="Email">
+			</div>
+			<div class="form-group select">
+				<select name="" id="">
+					<option value="1">Chicago</option>
+					<option value="2">Los Angeles</option>
+					<option value="3">New York City</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<input type="submit" value="Send" class="btn-ghost">
+			</div>
+		</form>
+	</div>
+</div>
+
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">
+
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>

@@ -1,0 +1,74 @@
+// Typography
+$base-font-family: 'franklin_gothic_fsbook', $helvetica;
+$heading-font-family: 'franklin_gothic_fsbook', $base-font-family;
+
+// Font Sizes
+$base-font-size-mobile: 14px; 
+$base-font-size: 16px; 
+
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.1;
+
+// Font Weights
+$base-font-weight: 300;
+$heading-font-weight: 600;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 2rem;
+$small-spacing: $base-spacing / 2;
+$smaller-spacing: $base-spacing / 3;
+$base-z-index: 0;
+$modular-scale-ratio: $minor-third;
+$navbar-height: 4rem;
+$navbar-height-mobile: 3.5rem;
+
+// Colors
+$primary: red;
+$primary-light: tint($primary, 20%);
+$primary-dark: shade($primary, 40%);
+$secondary: #263238;
+$secondary-light: tint($secondary, 15%);
+$terciary: #0db7d3;
+$dark-gray: shade($secondary, 15%);
+$medium-gray: tint($dark-gray, 50%);
+$light-gray: #ddd;
+$lighter-gray: #f8f8f8;
+
+// Font Colors
+$base-font-color: $dark-gray;
+$action-color: $primary;
+
+// Border
+$base-border-color: $light-gray;
+$dark-border-color: $medium-gray;
+$base-border: 1px solid $base-border-color;
+$dark-border: 1px solid $dark-border-color;
+
+// Background Colors
+$base-background-color: $primary;
+$secondary-background-color: tint($base-border-color, 75%);
+
+// Forms
+$form-box-shadow: inset 0 0 0 rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 0px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+
+// Animations
+$base-duration: 150ms;
+$base-timing: $ease-in-out-quad;
+
+// Footer
+$footer-background: $secondary;
+$footer-color: white;
+$footer-link-color: transparentize($footer-color, 0.6);
+$footer-disclaimer-color: transparentize($footer-color, 0.6);
+
+// Modal
+$modal-padding: 3em;
+$modal-background: #fff;
+$modal-close-color: $light-gray;
+$modal-image-height: 135px;
+$modal-image-width: $modal-image-height;
+$modal-trigger-image-width: 300px;

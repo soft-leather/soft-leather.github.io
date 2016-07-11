@@ -1,0 +1,9 @@
+.hero {
+	padding: $smaller-spacing 0;
+	background: $secondary;
+	color: #fff;
+}
+
+.hero__container {
+	@extend .container;
+}

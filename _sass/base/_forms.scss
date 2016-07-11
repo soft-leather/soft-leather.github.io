@@ -1,0 +1,178 @@
+fieldset {
+  background-color: $secondary-background-color;
+  border: $base-border;
+  border: 0;
+  margin: 0 0 $small-spacing;
+  padding: $small-spacing;
+  @media (max-width: 415px) {
+    padding: $base-spacing;
+  }
+}
+
+input,
+label,
+select {
+  display: block;
+  width: 100%;
+  font-family: $heading-font-family;
+  font-size: $base-font-size;
+}
+
+label {
+  font-weight: 400;
+  margin-bottom: $small-spacing / 4;
+  color: $medium-gray;
+
+  &.required::after {
+    content: "*";
+  }
+
+  abbr {
+    display: none;
+  }
+}
+
+label > h5 {
+  margin-bottom: 0;
+  padding-bottom: $smaller-spacing / 3;
+  color: $dark-gray;
+}
+
+#{$all-text-inputs},
+select[multiple=multiple] {
+  color: $secondary;
+  background-color: #fff;
+  // border: $dark-border;
+  border: $base-border;
+  border-radius: $base-border-radius;
+  border-radius: 0;
+  box-shadow: $form-box-shadow;
+  box-shadow: 0;
+  box-sizing: border-box;
+  font-family: $heading-font-family;
+  font-size: $base-font-size;
+  margin-bottom: 0;
+  padding: $smaller-spacing*0.75;
+  transition: border-color $base-duration $base-timing;
+  width: 100%;
+
+  @include placeholder {
+    font-family: $heading-font-family;
+    color: $medium-gray;
+  }
+
+  &:hover {
+    border-color: shade($base-border-color, 20%);
+  }
+
+  &:focus {
+    border-color: $action-color;
+    box-shadow: $form-box-shadow-focus;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: shade($base-background-color, 5%);
+    cursor: not-allowed;
+
+    &:hover {
+      border: $base-border;
+    }
+  }
+  &.input-small {
+    padding: $smaller-spacing/2;
+    font-size: modular-scale(-1);
+  }
+}
+
+textarea {
+  resize: vertical;
+  margin-bottom: $smaller-spacing;
+}
+
+input[type="search"] {
+  appearance: none;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin-right: $small-spacing / 2;
+
+  + label {
+    display: inline-block;
+  }
+}
+
+input[type="file"] {
+  margin-bottom: $small-spacing;
+  width: 100%;
+}
+
+select {
+  margin-bottom: $base-spacing;
+  max-width: 100%;
+  width: auto;
+}
+
+.flexform {
+  p {
+    margin: 0 -$smaller-spacing/3;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: $smaller-spacing/2;
+
+    input {
+      flex: 1 10em;
+      margin: $smaller-spacing/3;
+      // &:first-of-type {
+      //   margin-left: 0;
+      // }
+      // &:last-of-type {
+      //   margin-right: 0;
+      // }
+    }
+  }
+}
+
+.form__group {
+  margin: $small-spacing*1.5 0;
+  &.submit {
+    border-top: $base-border;
+    padding-top: $small-spacing;
+    margin-top: $small-spacing;
+    margin-bottom: 0;
+  }
+}
+
+.form-group {
+  &.select {
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    overflow: hidden;
+    background-color: #fff;
+    background: #fff url("http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif") no-repeat 95% 50%;
+  }
+  select {
+    padding: $smaller-spacing/2 $smaller-spacing*0.75;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    &:focus {
+        outline: none;
+    }
+  }
+}
+
+.form__title {
+  border-bottom: $base-border;
+  padding-bottom: $smaller-spacing;
+}
+
