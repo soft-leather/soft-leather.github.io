@@ -9,7 +9,7 @@
 .hero__inner {
 	padding: $small-spacing $small-spacing $small-spacing/2;
 	width: 100%;
-	max-width: 26rem;
+	max-width: 28rem;
 	form {
 		input {
 			border: 0;
@@ -43,7 +43,9 @@
 		text-transform: uppercase;
 		letter-spacing: 1px;
 		@include bp(small-up) {
-			margin-bottom: $small-spacing*1.25;
+			margin-bottom: $small-spacing;
+			font-size: modular-scale(4);
+
 		}
 	}
 	a {
@@ -56,7 +58,7 @@
 	max-width: 60vw;
 	margin: $small-spacing auto 0;
 	@include bp(small-up) {
-		max-width: 300px;
+		max-width: $base-spacing*5;
 	}
 }
 .hero__nav {
