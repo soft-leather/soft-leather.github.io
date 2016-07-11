@@ -16,18 +16,27 @@ layout: default
 		
 		<hr>
 
-		<form action="">
+		<form action="" method="post" action="http://scripts.dreamhost.com/add_list.cgi">
+			<input type="hidden" name="domain" value=“www.softleatherclub.com” />
+			<input type="hidden" name="url" value="SubscribedURL" />
+			<input type="hidden" name="unsuburl" value="UnsubscribedURL" />
+			<input type="hidden" name="alreadyonurl" value="AlreadyOnURL" />
+			<input type="hidden" name="notonurl" value="NotOnURL" />
+			<input type="hidden" name="invalidurl" value="InvalidURL" />
+			<input type="hidden" name="emailconfirmurl" value="EmailConfirmURL" />
+			<input type="hidden" name="emailit" value="1" />
+
 			<div class="form-group">
-				<input type="text" placeholder="Name">
+				<input type="text" name="name" placeholder="Name">
 			</div>
 			<div class="form-group">
-				<input type="email" placeholder="Email">
+				<input type="email" name="email" placeholder="Email">
 			</div>
 			<div class="form-group select">
-				<select name="" id="">
-					<option value="1">Chicago</option>
-					<option value="2">Los Angeles</option>
-					<option value="3">New York City</option>
+				<select name="list">
+					<option value="la@softleatherclub.com">Los Angeles</option>
+				    <option value="nyc@softleatherclub.com">New York</option>
+				    <option value="list@softleatherclub.com">Chicago</option>
 				</select>
 			</div>
 			<div class="form-group">
