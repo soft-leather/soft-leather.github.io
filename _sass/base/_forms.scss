@@ -169,6 +169,9 @@ select {
         outline: none;
     }
   }
+  &.submit {
+    margin-bottom: 0;
+  }
 }
 
 .form__title {

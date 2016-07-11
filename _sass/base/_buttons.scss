@@ -16,7 +16,7 @@ a.btn {
     line-height: 1;
     padding: $smaller-spacing $small-spacing;
     text-decoration: none;
-    transition: background-color $base-duration $base-timing;
+    transition: all $base-duration $base-timing;
     user-select: none;
     vertical-align: middle;
     white-space: nowrap;
@@ -78,14 +78,15 @@ a.btn {
     }
     &.btn-ghost {
         background: transparent;
-        border: 2px solid white;
+        border: 0;
+        box-shadow: inset 0px 0px 0px 2px #fff;
         color: #fff;
         text-align: right;
         &:hover,
         &:focus {
-            border: 2px solid white;
+            box-shadow: inset 0px 0px 0px 2px $action-color;
             color: #000;
-            background: #fff;
+            background: $action-color;
         }
         &:disabled {
             cursor: not-allowed;
