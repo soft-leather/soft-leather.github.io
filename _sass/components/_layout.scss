@@ -1,7 +1,10 @@
+html,body {
+	background: #000;
+	height: 100%;
+}
 body {	
 	position: relative;
 	font-size: $base-font-size-mobile;
-	background: shade($secondary, 5%);
 	// transition: all 200ms ease;
 	@include bp(medium-up) {
 		font-size: $base-font-size;
