@@ -48,7 +48,13 @@
 		white-space: nowrap;
 	}
 }
-
+.hero__img {
+	max-width: 10em;
+	margin: 0 auto;
+	@include bp(small-up) {
+		max-width:100%;
+	}
+}
 .hero__nav {
 	display: none;
 	text-align: center;
