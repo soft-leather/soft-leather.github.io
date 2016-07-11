@@ -59,7 +59,7 @@
 	margin: $small-spacing auto 0;
 	@include bp(small-up) {
 		max-width: $base-spacing*5;
-		margin: $small-spacing auto $small-spacing/2;
+		margin: $small-spacing auto $small-spacing/3;
 	}
 }
 .hero__nav {
