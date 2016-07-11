@@ -7,10 +7,11 @@
 	color: #fff;
 }
 .hero__inner {
-	padding: $small-spacing $small-spacing $small-spacing/2;
+	padding: $small-spacing $small-spacing 0;
 	width: 100%;
-	max-width: 28rem;
+	// 
 	form {
+		max-width: 28rem;
 		input {
 			border: 0;
 		}
@@ -26,7 +27,9 @@
 		}
 	}
 	hr {
+		max-width: 28rem;
 		border-color: #fff;
+		margin: 0 auto;
 		margin-top: $smaller-spacing/2;
 		margin-bottom: $small-spacing;
 	}
@@ -42,9 +45,9 @@
 		margin-bottom: 0;
 		text-transform: uppercase;
 		letter-spacing: 1px;
-		@include bp(small-up) {
+		@include bp(medium-up) {
+			font-size: modular-scale(6);
 			margin-bottom: $small-spacing;
-			font-size: modular-scale(4);
 
 		}
 	}
@@ -84,7 +87,7 @@
 		}
 	}
 	&.social {
-		
+		margin-top: $smaller-spacing;
 		font-size: modular-scale(-1);
 		margin-bottom: 0;
 	}
