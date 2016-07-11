@@ -3,7 +3,7 @@
 #
 
 # Name of your site (displayed in the header)
-name: soft-leather
+name: Soft Leather
 
 # Short bio or description (displayed in the header)
 description: softleatherclub.com
@@ -71,6 +71,7 @@ kramdown:
 # Set the Sass partials directory, as we're using @imports
 sass:
   style: :expanded # You might prefer to minify using :compressed
+  sass_dir: _sass
 
 # Use the following plug-ins
 gems:
