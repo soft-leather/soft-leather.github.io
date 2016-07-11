@@ -11,7 +11,7 @@
 	width: 100%;
 	// 
 	form {
-		max-width: 28rem;
+		max-width: 24rem;
 		input {
 			border: 0;
 		}
@@ -27,7 +27,7 @@
 		}
 	}
 	hr {
-		max-width: 28rem;
+		max-width: 24rem;
 		border-color: #fff;
 		margin: 0 auto;
 		margin-top: $smaller-spacing/2;
@@ -47,7 +47,7 @@
 		letter-spacing: 1px;
 		@include bp(medium-up) {
 			font-size: modular-scale(6);
-			margin-bottom: $small-spacing*1.25;
+			margin-bottom: $small-spacing;
 
 		}
 	}
@@ -62,6 +62,7 @@
 	margin: $small-spacing auto 0;
 	@include bp(small-up) {
 		max-width: $base-spacing*5;
+		margin: $small-spacing auto $small-spacing/2;
 	}
 }
 .hero__nav {
