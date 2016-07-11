@@ -47,7 +47,7 @@
 		letter-spacing: 1px;
 		@include bp(medium-up) {
 			font-size: modular-scale(6);
-			margin-bottom: $small-spacing;
+			margin-bottom: $small-spacing*1.25;
 
 		}
 	}
